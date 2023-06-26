@@ -1,0 +1,894 @@
+Q1. Why do we call Python as a general purpose and high-level programming language?
+--> We call python is high -level programming language because it is very easylly
+    understandable by humans.python is called general purpose because other than 
+    application development and data science it is adopded by accounts and many other
+    purpose to get it done.
+
+Q2. Why is Python called a dynamically typed language?
+--> python is called a dynamically typed language beacuse we dont initialise the 
+    variable type during code writting. it automatically detect the data type 
+    during runtime.
+
+Q3. List some pros and cons of Python programming language?
+  --> PROS= 
+            -Firstlly it is a bignner friendlly Language.
+            -it have very Extencive Library collection.
+            - It highly Scalable.
+
+     Cons->
+            -It is slower than Compile language.
+            -Security is lower than other language.
+            -Pythone comes with high  memory consumtion.
+
+Q4. In what all domains can we use Python?
+ --> Pyhton is mainly popular for Machine learning and artificial intelligence
+     and Data science.other than that it can be used for web devlopment,
+     Gaming development,Application development.
+
+Q5. What are variable and how can we declare them?
+--> The name given to the sstorage is variable . Variables are those in which we 
+    store items.Usully we declaire them with giving them the data type and assign
+    some value but in case of python we did not give the data type to variable
+   only assign some value to it . during runtime python get to that it is a variable.
+
+
+Q6. How can we take an input from the user in Python?
+--> The "input()" function is sed to take input in the python Like-
+    A=int(input("Give  the first value:-"))
+    B=int (input("Give the second value:-"))
+    C=A+B
+    print(C)
+
+Q7. What is the default datatype of the value that has been taken as an input using
+    input() function?
+--> The default "input()" function return String.
+
+Q8. What is type casting?
+--> Converting one Varible data type to other is called type Casting Like->
+    a =16
+    a =float(a)
+    print(a)
+    
+    output-16.0
+    
+
+Q9. Can we take more than one input from the user using single input() function?
+    If yes, how? If no, why?
+--> yes, there are two ways that in pythone we can take more that one input uing only
+    single input() function . like->
+   1- using split() function
+   2- using list Comprehension 
+ 
+
+ex- (i)-a,b,c =input("Give the values to variables:-").split()
+       print(a)
+       print(b)
+       print(c)
+
+    (ii)-x = list(map(int, input("Enter multiple values: ").split()))  
+         print("List of students: ", x)  
+
+
+Q10. What are keywords?
+--> Keywords are those reserved words that can not be used for other purpose 
+    that it is reserved for.Like-class, for,while,not not in, in etc. 
+
+Q11. Can we use keywords as a variable? Support your answer with reason.
+--> No, keywords cannot be used for other purpose than it is reserved for.
+
+Q12. What is indentation? What's the use of indentaion in Python?
+--> Indentation is the space given befor specific keyword that it shows that it is
+    continuation of or inside another command.Usually it is 4 spaces but more can be
+   used. like- 
+               for x in list1:
+                   print(x)
+
+Q13. How can we throw some output in Python?
+-->We can throw Output in a python with use of "print" keyword.
+   ex- list2=["Rahul","Banana","Cherry","Pen"]
+       print(list2)
+
+Q14. What are operators in Python?
+--> Operators are those which is use to some calculation and operation between
+    two or more numeric values.Like-> +,-,/,%,+=,-=,/=,%= etc
+    ex- a=4
+        b=2
+        print(a+b)
+        print(a-b)
+        print(a/b)
+        print(a%)
+     
+
+Q15. What is difference between / and // operators?
+-->  "/" operator is divition operator it simply divide two numerical value and give the value and
+     it can also give output as decimal.
+     "//" operator is a Floor division operator which not only divides but give the minimum value after 
+      divition it doesnt includes dicimal part.like-if normaloutput is 7.5 it will give only 7.
+
+Q16. Write a code that gives following as an output.
+```
+iNeuroniNeuroniNeuroniNeuron
+
+```
+--> Name=input("Enter the name you want to provide:- ")
+
+    input console=iNeuroniNeuroniNeuroniNeuron
+
+                (or)
+
+     a,b,c,d=input("Enter the name you want to provide:- ").split()
+     print(a,b,c,d)
+      
+     In input console-
+      a=iNeuron
+      b=iNeuron
+      c=iNeuron
+      d=iNeuron
+
+Q17. Write a code to take a number as an input from the user and check if the 
+    number is odd or even.
+--> CODE-
+         num =int(input("Enter the number you want to check :-"))
+         if(num%2==0):
+             print("Number is even")
+    
+         else:
+             print("Number is odd")
+
+Q18. What are boolean operator?
+--> Boolean operator are those which tell teh validity of statement 
+     and it gives output like- True or False
+
+Q19. What will the output of the following?
+    ```
+    1 or 0 -True
+
+    0 and 0 -False
+
+    True and False and True -False
+
+    1 or 0 or 0 -True
+    ```
+
+Q20. What are conditional statements in Python?
+--> Conditional statements are those by which we can provide conditons in the code.
+    The keywords are used to provide conditions in the code are -if,elsea nd else.
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+-->   'if', 'elif' and 'else' are the eywords which is used as conditional statement in 
+      the code in python.
+      like if we have written the code using these three keywords then the code will go like these
+      first it will go to 'if 'statement if that statisfy the condion code will excicute if not satisfied
+      the it will go to elif if that statisfy the condion code will excicute if not satisfied
+      the it will go to else statement and finishes the code.
+
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". 
+     If age is < 18 display "I can't vote".
+
+-->  CODE=
+     name=input("Enter name :- ")
+     Age=int(input("Enter the Age:- "))
+     if(Age>=18):
+         print(name,"I Can vote")
+     else:
+         print(name,"I Can't vote")
+
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+-->  numbers = [12, 75, 150, 180, 145, 525, 50]
+     add = 0
+       for num in numbers:
+          if num%2 == 0:
+             add = add+num
+          else:
+          continue
+     print(add) 
+
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+--> CODE->
+    a=float(input("First value :-"))
+    b=float(input("Second value :-"))
+    c=float(input("Third value :-"))
+
+    if(a>=b) and (a>=c):
+        max=a
+    elif(b>=a) and (b>=c):
+        max=b
+    elif(c>=a) and (c>=b):
+        max=c
+    print("Maximum value:-",max)
+
+
+Q25. Write a program to display only those numbers from a list that satisfy the following conditions
+
+- The number must be divisible by five
+
+- If the number is greater than 150, then skip it and move to the next number
+
+- If the number is greater than 500, then stop the loop
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+-->   num1 = [12, 75, 150, 180, 145, 525, 50]
+      for num in num1:
+          if num %5==0:
+             if num >=150:
+                 break
+             print(num)
+
+
+Q26. What is a string? How can we declare string in Python?
+--> String is a non primitive data type. To declare String in python 'String' 
+keyword is used like-
+                      String name
+
+Q27. How can we access the string using its index?
+--> We can access the string using its index with for loop-
+  ex->
+  for i in string:
+      print(i)
+
+Q28. Write a code to get the desired output of the following
+```
+string = "Big Data iNeuron"
+desired_output = "iNeuron"
+```
+-->
+    print(string[9:17])
+
+        (or)
+    print(string[-7:])
+
+Q29. Write a code to get the desired output of the following
+```
+string = "Big Data iNeuron"
+desired_output = "norueNi"
+```
+--> string="Big Data iNeuron"[:-8:-1]
+    print(string)
+
+Q30. Resverse the string given in the above question.
+-->string="Big Data iNeuron"[::-1]
+    print(string)
+
+Q31. How can you delete entire string at once?
+--> string = "Big Data"
+    del(string)
+
+Q32. What is escape sequence?
+--> Escape sequence is a characters which is used in string or characters which
+    itself not represent itself but do some specific this like adding single and
+    double quetes and adding new line etc.
+   ex-
+   \n - for new line
+   \'- single quotes
+   \\'- doublle quotes
+
+Q33. How can you print the below string?
+```
+'iNeuron's Big Data Course'
+```
+--> print("iNeuron's Big Data Course")
+
+Q34. What is a list in Python?
+--> list is used to save different many data in a single variable.It allowes
+    duplicate data and ordered,changable.
+ex->
+     list1=[1,2,3,"Rahul",5]
+
+Q35. How can you create a list in Python?
+--> We can create list using square bracket.
+ex->
+    list2=[123,"Rahul","Rahul"]
+
+Q36. How can we access the elements in a list?
+--> ther eare two ways to access the list element ->
+   i) Manually
+        list1=[23,"Rahul","Rahul"]
+         print(list[0])
+         print(list[1])
+         print(list[2])
+   
+   ii) With using loop->
+       for i in list1:
+          print(list[i])
+
+
+
+Q37. Write a code to access the word "iNeuron" from the given list.
+```
+lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
+``` 
+-->   print(lst[4][2])
+
+Q38. Take a list as an input from the user and find the length of the list.
+-->  str=input("Enter :-")
+     print(len(str))
+
+Q39. Add the word "Big" in the 3rd index of the given list.
+```
+lst = ["Welcome", "to", "Data", "course"]
+```
+--> lst.insert(2,"big")
+    
+
+Q40. What is a tuple? How is it different from list?
+--> tuple is used to have diffrent type and in many numbers of data in a single
+    varible. It is ordered,unchangeble and allow duplicate values.
+    it is different for list because it is unchangeble.
+
+Q41. How can you create a tuple in Python?
+--> To create tuple we have to have one variable and data should be stored in a 
+    parantesis.like-
+
+    tuple1=(123,"123","Ajay",True)
+
+Q42. Create a tuple and try to add your name in the tuple. Are you able to do it?
+     Support your answer with reason.
+-->  Directly tuple cant changed and name or other things cant be added because of
+     its unchangeble properties but with the help of type this ca be done so like-
+     
+     tuple1=(123,"123","Ajay",True)
+     tuple_to_list=list(tuple1)
+     tuple_to_list.append("Rahul")
+     tuple1=tuple(tuple_to_list)
+     print(tuple1)
+
+Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
+--> yes, we can append tuple.
+    ex->
+    tuple1=(123,"123","Ajay",True)
+    tuple2=(234,"Rahul",False,"Chair")
+    tuple3=tuple2+tuple1
+    print(tuple3)
+
+Q44. Take a tuple as an input and print the count of elements in it.
+-->  my_tuple=tuple(input("Enter string :-").split())
+     print(my_tuple)
+
+
+Q45. What are sets in Python?
+--> set is used to store data items in a variable. it is unchangeble,unordered
+    and does not allow duplicate items in it.
+   
+
+Q46. How can you create a set?
+--> set can be creted with the help of one variable and data stored in curly bracket.
+  ex-
+     set1={"123",True,"Ineoron",123}
+
+Q47. Create a set and add "iNeuron" in your set.
+-->  set1={"123",True,"Ineoron",123}
+     set_list=list(set1)
+     set_list.append("Ineuron")
+     set1=set(set_list)
+     print(set1)
+
+Q48. Try to add multiple values using add() function.
+-->   While trying adding multiple value it is throwing error and showing 
+      add doesnt take more than one value.
+
+Q49. How is update() different from add()?
+-->   update() keyword is different from add() in term of its functionality
+      like if we use update it only change the value at specifice index but add()
+      is use to append value to set.
+
+Q50. What is clear() in sets?
+-->  clear() is used to remove all the items present in a set.
+
+Q51. What is frozen set?
+--> frozen set returns the unchangeble objet items.
+like if we want to make list unchangeble we can use frozenset() function.
+
+Q52. How is frozen set different from set?
+--> Tipocally in set we can use add(),remove() items .but in frozen set we can not 
+    even use add(), remove() functions. it be really unchangeble.
+
+Q53. What is union() in sets? Explain via code.
+--> union() function basically joins two set and return one more set.    
+   like-
+    set_a={1,2,3,4,5}
+    set_b={6,7,8}
+    set_a.union(set_b)
+ output={1,2,3,4,5,6,7,8}
+
+
+Q54. What is intersection() in sets? Explain via code.
+-->  intersection() is a function which b asically return the common values 
+     present in a two or more set and return one more set.
+    like- set_a={1,2,3,4,5}
+    set_b={6,7,8,2,3}
+    set_a.intersection(set_b)
+
+output -->{2,3}
+
+Q55. What is dictionary in Python? 
+--> Dictionary is used to store key value type items in a single variable.
+    it is ordered ,changeble and do not allow dupicate value.
+   
+
+Q56. How is dictionary different from all other data structures.
+--> Dictionary different from other data structure because of its feature.it is 
+    ordered ,changeble and do not allow duplicate value. And it store values in 
+    form of key value pair.
+
+Q57. How can we delare a dictionary in Python?
+--> we can declare dictionary with help of varible and its data in curly bracket.
+like-
+     Dict1={"Name":"Ineuron"}
+
+Q58. What will the output of the following?
+```
+var = {}
+print(type(var))
+```
+--> 'dict'
+
+Q59. How can we add an element in a dictionary?
+-->   dict1={"Name":"Ineuron",
+       "Course":"Big data"
+             }
+      dict1["Started"]="October"
+      print(dict1)
+
+Q60. Create a dictionary and access all the values in that dictionary.
+-->  dict1={"Name":"Ineuron",
+       "Course":"Big data"
+      }
+  
+     for x,y in dict1.items():
+      print(x,y)
+
+Q61. Create a nested dictionary and access all the element in the inner dictionary.
+-->  Family_member={
+    'child1':{
+            'name':'Sohan',
+             'Height':5.9,
+             'Complexcity':'Witis'
+               },
+     'child2':{
+         'name':'Mohan',
+          'Height': 5.8,
+          'Complexcity':'Fair'
+             },
+    'child3':{
+         'name':'Rahul',
+         'Height': 5.6,
+         'Complexcity':'Black'
+         }
+}
+
+         x=Family_member.keys()
+         print(x)
+
+         y=Family_member.values()
+         print(y)
+
+         z=Family_member.items()
+         print(z)
+
+Q62. What is the use of get() function?
+--> get() function is used to retrive the specific value of key.
+
+Q63. What is the use of items() function?
+--> the items() fuction contain the view obeject . the view have key-value pair.
+
+Q64. What is the use of pop() function?
+-->  pop() function is used to delete the specfic item or key and its value.
+
+Q65. What is the use of popitems() function?
+-->  popitems() function is used to delecte last item in a dictionary.
+
+Q66. What is the use of keys() function?
+--> key() function is used to retrive the keys of the dictionary.
+
+Q67. What is the use of values() function?
+--> values() function is used to retrive the values of the dictionary.
+
+Q68. What are loops in Python?
+--> loop are definate program which is programmed for a specific interval.
+
+Q69. How many type of loop are there in Python?
+--> In python there are 2 type of loops-
+    (i) for loop
+    (ii) while loop
+
+Q70. What is the difference between for and while loops?
+--> Both are there are mostly similar but a small diference is that if the iterval
+    of loop is known then 'for' loop and if the interval is not know then 'while'
+    loop is used.
+
+Q71. What is the use of continue statement?
+--> if the certain condition is meet at that time to continue the program 'Continue' 
+    keyword is used.
+
+Q72. What is the use of break statement?
+-->  if the certain condition is meet at that time to stop the program 'break' 
+     keyword is used.
+
+Q73. What is the use of pass statement?
+--> To make method return or print noting pass statement is used.
+
+Q74. What is the use of range() function?
+-->  To work in a specific time length 'range()' function is used.
+
+Q75. How can you loop over a dictionary?
+-->  friends={
+        'name':'Rahul',
+        'name':'Ajay',
+        'name':'Vijay'
+               }
+ for i in friends():
+          print(i) 
+
+
+
+Q76. Write a Python program to find the factorial of a given number.
+--> def factorial(n):
+  
+    if n == 1:
+        return 1
+    else:
+        return (n * factorial(n-1))
+        
+n=3
+print(factorial(n))
+        
+
+Q77. Write a Python program to calculate the simple interest.
+     Formula to calculate simple interest is SI = (P*R*T)/100
+-->  def SimpleI(p,r,t):
+  simple = (p*r*t)/100
+  print(f"Simple interest is {simple}")
+  return simple
+
+simpleI(9, 9, 7)
+
+Q78. Write a Python program to calculate the compound interest. 
+     Formula of compound interest is A = P(1+ R/100)^t.
+	 
+	 def CI(p, r, t):
+         amount = p*(1+r/100)**t
+         ci = amount - p
+         print(f"Compound intrest is {ci}")
+         return ci
+
+     CI(20000, 11.25, 6)
+
+Q79. Write a Python program to check if a number is prime or not.
+-->   Num=int(input("Enter the Number to check :- "))
+      if Num%2==0:
+         print(" number is prime")
+      else:
+        print("Number is Not prime")
+
+Q80. Write a Python program to check Armstrong Number.
+--># Python program to check if the number is an Armstrong number or not
+
+
+num = int(input("Enter a number: "))
+
+sum = 0
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+
+Q81. Write a Python program to find the n-th Fibonacci Number.
+-->     nterms = int(input("How many terms? "))
+n1, n2 = 0, 1
+count = 0
+
+if nterms <= 0:
+   print("Please enter a positive integer")
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+
+else:
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2
+
+       n1 = n2
+       n2 = nth
+       count += 1
+
+Q82. Write a Python program to interchange the first and last element in a list.
+-->   def swapList(newList):
+    size = len(newList)
+     
+ 
+    temp = newList[0]
+    newList[0] = newList[size - 1]
+    newList[size - 1] = temp
+     
+    return newList
+    newList = [12, 35, 9, 56, 24]
+   print(swapList(newList))
+
+Q83. Write a Python program to swap two elements in a list.
+--> def swapPositions(list, pos1, pos2):
+     
+    list[pos1], list[pos2] = list[pos2], list[pos1]
+    return list
+ 
+   List = [23, 65, 19, 90]
+   pos1, pos2  = 1, 3
+ 
+print(swapPositions(List, pos1-1, pos2-1))
+
+Q84. Write a Python program to find N largest element from a list.
+--> def Nmaxelements(list1, N):
+    final_list = []
+ 
+    for i in range(0, N):
+        max1 = 0
+         
+        for j in range(len(list1)):    
+            if list1[j] > max1:
+                max1 = list1[j];
+                 
+        list1.remove(max1);
+        final_list.append(max1)
+         
+    print(final_list)
+ 
+
+   list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
+   N = 2
+
+  Nmaxelements(list1, N)
+
+
+Q85. Write a Python program to find cumulative sum of a list.
+--> def Cumulative(lists):
+    cu_list = []
+    length = len(lists)
+    cu_list = [sum(lists[0:x:1]) for x in range(0, length+1)]
+    return cu_list[1:]
+
+  lists = [10, 20, 30, 40, 50]
+   print (Cumulative(lists))
+
+
+Q86. Write a Python program to check if a string is palindrome or not.
+--> def isPalindrome(s):
+    return s == s[::-1]
+   s = "Radha"
+   ans = isPalindrome(s)
+ 
+   if ans:
+     print("Yes")
+   else:
+     print("No")
+
+Q87. Write a Python program to remove i'th element from a string.
+--> 
+   test_str = "GeeksForGeeks"
+
+
+   new_str = test_str.replace('e', '')
+   print ("The string after removal of i'th character( doesn't work) : " + new_str)
+
+   new_str = test_str.replace('s', '', 1)
+   print ("The string after removal of i'th character(works) : " + new_str)
+
+Q88. Write a Python program to check if a substring is present in a given string.
+
+-->.
+
+def check_substring(s2, s1):
+	if (s2.count(s1) > 0):
+		print(f'"{s1}" is a substring of "{s2}"')
+	else:
+		print(f'"{s1}" is not a substring of "{s2}"')
+
+
+s2 = "Welcome to iNeuron Big Data Bootcamp"
+s1 = "iNeuron"
+check_substring(s2, s1)
+Q89. Write a Python program to find words which are greater than given length k.
+
+-->.
+def string_greater_than_k(k, str):
+	
+	string = []
+
+	text = str.split(" ")
+
+	for x in text:
+
+		if len(x) > k:
+
+			string.append(x)
+
+	return string
+
+k = 3
+str ="Big Data Bootcamp"
+print(string_greater_than_k(k, str))
+Q90. Write a Python program to extract unquire dictionary values.
+
+-->.
+test_dict = {'iNeuron': [5, 6, 7, 8],
+			'is': [10, 11, 7, 5],
+			'best': [6, 12, 10, 8],
+			'for': [1, 2, 5],
+      'big data': [2, 7, 12, 9]
+      }
+
+print("The original dictionary is : " + str(test_dict))
+
+res = list(sorted({ele for val in test_dict.values() for ele in val}))
+
+print("The unique values list is : " + str(res))
+Q91. Write a Python program to merge two dictionary.
+
+.
+-->
+def Merge(dict1, dict2):
+	return(dict2.update(dict1))
+
+dict1 = {'a': 10, 'b': 8}
+dict2 = {'d': 6, 'c': 4}
+
+print(Merge(dict1, dict2))
+
+print(dict2)
+Q92. Write a Python program to convert a list of tuples into dictionary.
+
+Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
+Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
+-->.
+
+print (dict([('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]))
+Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
+
+Input: list = [9, 5, 6]
+Output: [(9, 729), (5, 125), (6, 216)]
+-->.
+
+list1 = [9, 5, 6]
+
+res = [(val, pow(val, 3)) for val in list1]
+
+print(res)
+
+Q94. Write a Python program to get all combinations of 2 tuples.
+```
+Input : test_tuple1 = (7, 2), test_tuple2 = (7, 8)
+Output : [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
+```
+
+Q95. Write a Python program to sort a list of tuples by second item.
+```
+Input : [('for', 24), ('Geeks', 8), ('Geeks', 30)] 
+Output : [('Geeks', 8), ('for', 24), ('Geeks', 30)]
+```
+
+Q96. Write a python program to print below pattern.
+```
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+```
+-->def star_tri(n):
+    if n==0:
+        return
+    else:
+        star_tri(n-1)
+        print("* "*n)
+  
+
+   n = 5
+   star_tri(n)
+
+Q97. Write a python program to print below pattern.
+
+    *
+   **
+  ***
+ ****
+*****
+Ans97.
+
+def inverse_pattern():
+  n=5;i=0
+  while(i<=n):
+    print(" " * (n - i) +"*" * i)
+    i+=1
+
+inverse_pattern()
+Q98. Write a python program to print below pattern.
+
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+Ans98.
+
+def triangle(n):
+	
+	k = n - 1
+
+	for i in range(0, n):
+
+		for j in range(0, k):
+			print(end=" ")
+	
+		k = k - 1
+	
+		for j in range(0, i+1):
+
+			print("* ", end="")
+	
+		print("\r")
+
+n = 5
+triangle(n)
+Q99. Write a python program to print below pattern.
+
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5
+Ans99.
+
+def numpat(n):
+
+	num = 1
+
+	for i in range(0, n):
+
+		num = 1
+
+		for j in range(0, i+1):
+
+			print(num, end=" ")
+
+			num = num + 1
+
+		print("\r")
+
+n = 5
+numpat(n)
+Q100. Write a python program to print below pattern.
+
+A 
+B B 
+C C C 
+D D D D 
+E E E E E 
+Ans100.
+
+def alphapat(n):
+
+	num = 65
+
+	for i in range(0, n):
+	
+		for j in range(0, i+1):
+
+			ch = chr(num)
+		
+			print(ch, end=" ")
+	
+		num = num + 1
+	
+		print("\r")
+
+n = 5
+alphapat(n)
