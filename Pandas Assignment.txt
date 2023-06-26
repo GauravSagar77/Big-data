@@ -1,0 +1,92 @@
+Q1. How do you load a CSV file into a Pandas DataFrame? 
+-->df=pd.read_csv("link")
+
+Q2. How do you check the data type of a column in a Pandas DataFrame? 
+--> to check datatypes of every column we use - 'df.dtypes' command.
+
+Q3. How do you select rows from a Pandas DataFrame based on a condition? 
+--> df. loc[df['col1'] == value]
+
+Q4. How do you rename columns in a Pandas DataFrame? 
+--> we have to use following way- file_name.rename(columns = {'old_column_name':'new_col_name'}, inplace = True)
+
+Q5. How do you drop columns in a Pandas DataFrame? 
+--> we have to use following technique-
+df.drop('column_name'axis=1)
+
+Q6. How do you find the unique values in a column of a Pandas DataFrame? 
+--> To find unique values we have to use- df['column_name'].unique()
+
+Q7. How do you find the number of missing values in each column of a Pandas DataFrame? 
+--> We have to use follow technique to find missing values- df.isnull()
+
+Q8. How do you fill missing values in a Pandas DataFrame with a specific value? 
+--> to give the mean value to null place- df.fillna(df.mean(numeric_only=True).round(1), inplace=True)
+
+Q9. How do you concatenate two Pandas DataFrames? 
+--> following way we can concat dataframes - df1={ something.... }
+
+df2={ something.... }
+
+df3={ something.... }
+
+frames = [df1, df2, df3] result = pd.concat(frames)
+
+Q10. How do you merge two Pandas DataFrames on a specific column? 
+--> df1={ Name:... State:... Age:... }
+
+df2={ Name:... State:... Age:... }
+
+ df1.merge(df2[['Name', 'State', 'Age']])
+Q11. How do you group data in a Pandas DataFrame by a specific column and apply an aggregation function?
+ --> df.groupby('column_name')
+
+Q12. How do you pivot a Pandas DataFrame?
+ --> df.pivot(index='index_col', columns='col', values='value_col')
+
+Q13. How do you change the data type of a column in a Pandas DataFrame? 
+--> astype() keyword is used to change the data type of the data frame:- df = df.astype(str)
+
+Q14. How do you sort a Pandas DataFrame by a specific column? 
+--> To short the data frame in the pandas following method is used :- df.sort_values(by=['col_name'])
+
+Q15. How do you create a copy of a Pandas DataFrame? 
+--> to copy the dataframe to the another variable -
+here copying df to df1:-
+
+  df1=df.copy
+Q16. How do you filter rows of a Pandas DataFrame by multiple conditions? 
+--> By using df.loc[(dfcondition1) & (dfcondition2)]
+
+display(dataFrame.loc[(dataFrame['Salary']>=100000) & (dataFrame['Age']< 40) & (dataFrame['JOB'].str.startswith('D')), ['Name','JOB']])
+
+Q17. How do you calculate the mean of a column in a Pandas DataFrame? 
+--> mean() keyword is used to give the mean of the column:- df2 = df.mean() print(df2)
+
+Q18. How do you calculate the standard deviation of a column in a Pandas DataFrame? 
+--> To calculate the standard deviation following ways are used- df = pd.DataFrame(data) df1= df.std()
+
+Q19. How do you calculate the correlation between two columns in a Pandas DataFrame? 
+-->To Calculate the correlation between to columns in a pandas Dataframe following method is used :-
+
+dataframe[‘first_column’].corr(dataframe[‘second_column’])
+
+Q20. How do you select specific columns in a DataFrame using their labels? 
+--> Selecting multiple columns using there lables :- df2 = df[["Coi1","col2","col3"]]
+
+Q21. How do you select specific rows in a DataFrame using their indexes? 
+--> To select specific row in dataframe using there indexs are like :- df.set_index("Column_name")
+
+Q22. How do you sort a DataFrame by a specific column? 
+--> To sort dataframe by specific column name is like :- df1 = details.sort_values(by = 'col_name')
+
+Q23. How do you create a new column in a DataFrame based on the values of another column? 
+--> To creat a new column in dataframe with existing data in column like - df['new_column']=df['col1']+df['col2']
+
+Q24. How do you remove duplicates from a DataFrame? 
+--> To remove duplicate from a dataframe following ways are used :-
+
+df = pd.DataFrame(data)
+display(df.drop_duplicates())
+Q25. What is the difference between .loc and .iloc in Pandas? 
+--> The basic diffrence between .loc and .iloc is that .iloc use te user defined index and .loc is use the system defined index in pandas operation.
